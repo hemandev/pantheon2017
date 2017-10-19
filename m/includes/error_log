@@ -1,0 +1,11 @@
+[05-Oct-2017 23:08:19 Asia/Kolkata] PHP Notice:  Undefined index: accom in /home/pantheoncet/public_html/m/includes/register.php on line 40
+[05-Oct-2017 23:08:19 Asia/Kolkata] PHP Warning:  mail() has been disabled for security reasons in /home/pantheoncet/public_html/m/includes/register.php on line 86
+[08-Oct-2017 15:38:35 Asia/Kolkata] PHP Notice:  Undefined index: accom in /home/pantheoncet/public_html/m/includes/register.php on line 40
+[08-Oct-2017 15:38:35 Asia/Kolkata] PHP Warning:  mail() has been disabled for security reasons in /home/pantheoncet/public_html/m/includes/register.php on line 86
+[08-Oct-2017 18:38:19 Asia/Kolkata] PHP Notice:  Undefined index: workshop in /home/pantheoncet/public_html/m/includes/register.php on line 39
+[08-Oct-2017 18:38:19 Asia/Kolkata] PHP Notice:  Undefined index: accom in /home/pantheoncet/public_html/m/includes/register.php on line 40
+[08-Oct-2017 18:38:19 Asia/Kolkata] PHP Warning:  mail() has been disabled for security reasons in /home/pantheoncet/public_html/m/includes/register.php on line 86
+[09-Oct-2017 20:55:00 Asia/Kolkata] PHP Notice:  Undefined index: accom in /home/pantheoncet/public_html/m/includes/register.php on line 40
+[09-Oct-2017 20:55:01 Asia/Kolkata] PHP Warning:  mail() has been disabled for security reasons in /home/pantheoncet/public_html/m/includes/register.php on line 86
+[10-Oct-2017 17:10:22 Asia/Kolkata] PHP Notice:  Undefined index: accom in /home/pantheoncet/public_html/m/includes/register.php on line 40
+[10-Oct-2017 17:10:22 Asia/Kolkata] PHP Warning:  mail() has been disabled for security reasons in /home/pantheoncet/public_html/m/includes/register.php on line 86

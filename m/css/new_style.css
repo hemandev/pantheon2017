@@ -1,0 +1,28 @@
+.ins_date{
+	color: #f00;
+}
+.ins_small_head{
+	font-weight: bold;
+	text-decoration: underline;
+	color: #ff9933;
+	
+}
+#accom_div input[checkbox]{
+	background:#f00;	
+	border:none;
+}
+
+html body#page-top section.back div.tab-content p{
+	font-size:14px;
+}
+
+
+select option {
+    color: #000;
+    font-weight: bold;
+}
+
+select option:disabled {
+    color: #bbb;
+    font-weight: bold;
+}

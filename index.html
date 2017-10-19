@@ -1,0 +1,1857 @@
+<!DOCTYPE html>
+<html lang="en" class="js" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantheon</title>
+    <meta name="description" content="Pantheon: Civil fest" />
+    <meta name="keywords" content="Pantheon, civil, fest, css, 2016, 3d, perspective, navigation, menu" />
+
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <!-- <link rel="icon" href="http://example.com/favicon.png"> -->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" href="img/icon.png">
+
+    <!-- gallary stuff -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/vicons-font.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/tilteffect.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/event.css" />
+    <link rel="stylesheet" type="text/css" href="css/kontext.css" />
+    <link rel="stylesheet" type="text/css" href="css/forkit.css" />
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/register.css">
+
+
+    <script src="http://pantheoncet.com/detectmobile.js"></script>
+    <script>
+        try {
+            // This is the URL where mobile
+            detectmobile.defaultMobileURL = "http://pantheoncet.com/m/index.html";
+            detectmobile.process();
+        } catch(e) {
+            // Make sure that in the fault modes
+            // we do not interrupt execution of other Javascript code
+        }
+    </script>
+
+    <script src="js/snap.svg-min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/kontext.js"></script>
+
+    <!--[if IE]>
+    <script type="text/javascript">
+        var console = { log: function() {} };
+    </script>
+    <![endif]-->
+
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+ <!--   <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script> -->
+
+    <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+
+    <script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/sketch.min.js"></script>
+
+
+
+
+</head>
+<body>
+<div id=""></div>
+<header>
+    <div class="header-top clearfix">
+        <h1 class="l-left animated zoomIn"><a href="#home" ><img id="logo" src="img/dp3.png"></img></a></h1>
+        <a class="l-left toggle-menu" href="#">
+
+            <i></i>
+            <i></i>
+            <i></i>
+
+        </a>
+        <span>Menu</span>
+    </div>
+
+    <nav class="hide">
+        <ul id="menu">
+            <li data-menuanchor="home">
+                <a href="#home" title="home" data-hover="Home">Home</a>
+            </li>
+            <li data-menuanchor="about">
+                <a href="#about" title="about" data-hover="About">About</a>
+            </li>
+            <li data-menuanchor="events">
+                <a href="#events" title="events" data-hover="Gallery">Events</a>
+            </li>
+            <li data-menuanchor="gallery">
+                <a href="#gallery" title="gallery" data-hover="Gallery">Gallery</a>
+            </li>
+			<li data-menuanchor="team">
+                <a href="#team" title="our team" data-hover="Gallery">registration</a>
+            </li>
+            <li data-menuanchor="team">
+                <a href="#team" title="our team" data-hover="Gallery">our team</a>
+            </li>
+            <li data-menuanchor="contact">
+                <a href="#contact" title="contact" data-hover="Gallery">contact us</a>
+            </li>
+
+            <li data-menuanchor="sponsors">
+                <a href="#sponsors" title="sponsors" data-hover="Gallery">sponsors</a>
+            </li>
+        </ul>
+    </nav>
+   
+
+<div id="fullpage">
+    <section class="vertical-scrolling"  >
+        <canvas id="canvas" ></canvas>
+        <div id="presents"><img src="img/presents.png"></div>
+        <div id="name" ><img src="img/logo.png"></div>
+        <!--  <div id="date" ><img src="img/date3.png"></div> -->
+
+        <img id="date-image" src="img/OCT2728.png">
+        
+
+    </section>
+    <section class="vertical-scrolling" id="about_img">
+        <p id="page_title">ABOUT</p>
+        <div id="about-logo-content">
+            <img src="img/college.jpg" class="about_logo"><img src="img/ici.jpg" class="about_logo">
+            <span id="about-content" style="text-transform: none;"><h3>PANTHEON</h3> Pantheon is a much awaited techno extravaganza, which is a highly sought after inter-collegiate technical competition exclusively for civil engineering students all over India, extended by ICI CET student's chapter in association with ICI Trivandrum Chapter on October 27 and October 28, 2017, at College of engineering,Trivandrum. This is a well organised platform for all the civil engineering aspirants out there to realize your talents and unleash your true potential. Here, a participant is tested of their abilities, skills, spontaneity, technical know-how and art of creativity for various fortuity, which may prevail you aheadof your journey. Greet your biggest dreams, showcase your creativity, prove your mantle and you will be rewarded with exciting cash prizes. Imprint your presence, pocket exciting cash prizes and make this experience a paragon of virtue.
+        <h3><br>ICI CET STUDENT's CHAPTER</h3>
+        <p style="text-transform: none;">The Indian Concrete Institute chapter was opened in College of Engineering Trivandrum in 2013, for the nurturing of budding civil engineers.In 2015 ICI CET Chapter won the <b>BEST EMERGING CHAPTER</b> award and In 2014 It has acted as a platform where ideas are shared, theories are questioned and classroom knowledge is challenged. Talks by experts in the civil engineering field are frequently arranged, which have proved to give the students not only technical knowledge but also valuable insights into the professional world that help them to choose their career paths.  The industrial visits that are arranged in and outside the city have turned the textbooks and pictures into reality for the students. Competitions always sharpen the edges and elevate talents and that is what we have achieved through the competitions that we have arranged within the chapter. Now we are ready to take it up to the next level and widen the horizon through our new venture, Pantheon.</p>
+        </span></div>
+
+
+    </section>
+    <section class="vertical-scrolling">
+        <div id="page_title_event">EVENTS AND WORKSHOPS</div>
+        <article class="kontext" id="key">
+
+            <div class="layer one show">
+                <section class="tabs">
+                    <input id="tab-1" type="radio" name="radio-set-1" class="tab-selector-1" checked="checked" />
+                    <label for="tab-1" class="tab-label-1">DESCRIPTION</label>
+
+                    <input id="tab-2" type="radio" name="radio-set-1" class="tab-selector-2" />
+                    <label for="tab-2" class="tab-label-2">RULES</label>
+
+                    <input id="tab-3" type="radio" name="radio-set-1" class="tab-selector-3" />
+                    <label for="tab-3" class="tab-label-3">CONTACT</label>
+
+                    <!--               <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+                                <label for="tab-4" class="tab-label-4">Contact</label> -->
+
+                    <div class="clear-shadow"></div>
+
+                    <div class="content">
+                        <div class="content-1">
+                            <h3><strong>transcendence</strong></h3><br><br>
+							<p>the wise man's game<br>
+							</p>
+                            <p><span class="date">On 27th october</span> <br>
+                             Curiosity is the mother of all teachers and wisdom,the godfather to success. Strategize your team's moves and back yourselves to transcend your skills,time and resources as Pantheon presents its flagship event Transcendence. Tickle your brains,sharpen your wits and embolden your spirits in the race to unravel and accomplish.
+                            </p>
+                            <h3>prizes</h3>
+                            <p><strong>Prizes worth 30k to be won!</strong></p>
+
+                        </div>
+                        <div class="content-2">
+                            <h3><strong>transcendence</strong></h3><br><br>
+                            <p> An event spanning two days to test you logical and technical skills<br>
+							    * Team of 4 members <br>
+                                * Failure to be on time will resort in disqualification.<br>
+                                * All materials required will be provided.<br>
+                                * Mobile phones will not be permitted, unless otherwise specified.<br>
+                                * Decision by judges and organisers will be final in all cases.<br> </p>
+                        </div>
+                        <div class="content-3">
+                            <h3><strong>transcendence</strong></h3><br><br>
+                            <p>
+                                ATHUL U S  8157822817  <br>
+                                BHAVANA	9496672575
+
+
+                            </p>
+
+                        </div>
+                    </div>
+
+
+                </section>
+            </div>
+            <div class="layer two">
+                <section class="tabs ">
+                    <input id="tab-1" type="radio" name="radio-set-2" class="tab-selector-1" checked="checked" />
+                    <label for="tab-1" class="tab-label-1">DESCRIPTION</label>
+
+                    <input id="tab-2" type="radio" name="radio-set-2" class="tab-selector-2" />
+                    <label for="tab-2" class="tab-label-2">RULES</label>
+
+                    <input id="tab-3" type="radio" name="radio-set-2" class="tab-selector-3" />
+                    <label for="tab-3" class="tab-label-3">CONTACT</label>
+
+                    <!--               <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+                                <label for="tab-4" class="tab-label-4">Contact</label> -->
+
+                    <div class="clear-shadow"></div>
+
+                    <div class="content">
+                        <div class="content-1">
+                            <h3><strong>best engineer</strong></h3><br><br>
+							<p>Come, Pilot the drive to contrive the conception<br>
+							</p>
+                            <p><span class="date">On 28th October</span><br>
+
+                                 Do you think you have what it takes to be the leader you have always wanted to be?  Pantheon brings to you 'Best Engineer', a combination of just the right amount of aptitude and technical know how, to satiate the engineer in you!  Because being good, is just not good enough.
+                            </p>
+                            <h3>prizes</h3>
+                            <p>prizes worth 12k to be won!
+                                </strong></p>
+                        </div>
+                        <div class="content-2">
+                            <h3><strong>best engineer</strong></h3><br><br>
+                            <p>1. Use of mobile phones and other electronic gadgets are not allowed during the test,unless specified.<br>
+                                2. The participants should abide by the timings and venues of the event and any participants violating the rules will be disqualified.<br>
+                                3. The decisions of the judges in respective rounds will be the final.<br></p>
+
+
+                        </div>
+                        <div class="content-3">
+                            <h3><strong>best engineer</strong></h3><br><br>
+                            <p>
+                                Rahul Dileep        8281635133 <br>
+                                Jeny Mary Thomas     9497269773
+
+                            </p>
+
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+            <div class="layer three">
+                <section class="tabs ">
+                    <input id="tab-1" type="radio" name="radio-set-3" class="tab-selector-1" checked="checked" />
+                    <label for="tab-1" class="tab-label-1">DESCRIPTION</label>
+
+                    <input id="tab-2" type="radio" name="radio-set-3" class="tab-selector-2" />
+                    <label for="tab-2" class="tab-label-2">RULES</label>
+
+                    <input id="tab-3" type="radio" name="radio-set-3" class="tab-selector-3" />
+                    <label for="tab-3" class="tab-label-3">CONTACT</label>
+
+                    <!--               <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+                                <label for="tab-4" class="tab-label-4">Contact</label> -->
+
+                    <div class="clear-shadow"></div>
+
+                    <div class="content">
+                        <div class="content-1">
+                            <h3><strong>stake out</strong></h3><br><br>
+							<p>Stake out your engineering prowess<br>
+                            <p><span class="date"> On 27th october</span> </p>
+                            <p>Do you think you can fix your plans within our boundaries ?Then here is a chance to ground your ideas .We are looking for smart building plans that can fit into our space. We are looking for the most feasible plans. Dope out a solution ,win prizes ,moreover get your potential recognized . A platform to work together and put forth the best papers you can. Stand your ground against our scholarly judges. So, put on your thinking hats & you could be the next alpha mind. </p><br><br>
+                            <h3>prizes</h3>
+                            <p>prizes worth 15k to be won!
+                                </b></p><br>
+
+                        </div>
+                        <div class="content-2">
+                            <h3><strong>stake out</strong></h3><br>
+
+                            <p> round 1:preliminary aptitude test<br>
+                                round 2:measuring a given plot using the means we provide.<br>
+                                round 3:designing(using cad) a realistic and reasonable house complying to our requirments and strictly adhering to kbr.<br>
+                                round 4:transfer your plan to ground by setting.<br>
+                                round 5:q&a with the judgement panel.<br>
+                                we are looking for plans that can be as feasible as possible.
+
+                            </p>
+                        </div>
+                        <div class="content-3">
+                            <h3><strong>stake out</strong></h3><br><br>
+
+                            <p>
+                                SHOBIN   9605668381 <br>
+                                NAVNEETH 9567697511
+
+                            </p>
+
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+            <div class="layer four">
+                <section class="tabs ">
+                    <input id="tab-1" type="radio" name="radio-set-4" class="tab-selector-1" checked="checked" />
+                    <label for="tab-1" class="tab-label-1">DESCRIPTION</label>
+
+                    <input id="tab-2" type="radio" name="radio-set-4" class="tab-selector-2" />
+                    <label for="tab-2" class="tab-label-2">RULES</label>
+
+                    <input id="tab-3" type="radio" name="radio-set-4" class="tab-selector-3" />
+                    <label for="tab-3" class="tab-label-3">CONTACT</label>
+
+                    <!--               <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+                                <label for="tab-4" class="tab-label-4">Contact</label> -->
+
+                    <div class="clear-shadow"></div>
+
+                    <div class="content">
+                        <div class="content-1">
+                            <h3><strong>the eleventh hour</strong></h3><br><br>
+							<p>Only Time Will Tell<br>
+                            <p><span class="date">On 28th October</span><br></p>
+
+                            <p>The hour will be doled out to you much like the way water comes out of a leaky tap - scarce , sanctioned and never enough. If you have a habit of wriggling out of tight situations then this is your place. Pantheon presents "The Eleventh Hour", a one of a kind situational management event destined to scrutinize the civil engineer in you. Time flies like an arrow ; fruit flies like a banana.</p><br><br>
+                            <h3>prizes</h3>
+                            <p><b>Prizes worth 12k to be won!<br>
+                            </b></p>
+
+                        </div>
+                        <div class="content-2">
+                            <h3><strong>the eleventh hour</strong></h3><br><br>
+
+                            <p>group event with team of 3 members<br>
+
+                            </p>
+                        </div>
+                        <div class="content-3">
+                            <h3><strong>the eleventh hour</strong></h3><br><br>
+
+                            <p>
+                                Nandagopal 9497785931 <br>
+                                Sruthi S   8547756646
+
+
+                            </p>
+
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+            <div class="layer five">
+                <section class="tabs ">
+                    <input id="tab-1" type="radio" name="radio-set-5" class="tab-selector-1" checked="checked" />
+                    <label for="tab-1" class="tab-label-1">DESCRIPTION</label>
+
+                    <input id="tab-2" type="radio" name="radio-set-5" class="tab-selector-2" />
+                    <label for="tab-2" class="tab-label-2">RULES</label>
+
+                    <input id="tab-3" type="radio" name="radio-set-5" class="tab-selector-3" />
+                    <label for="tab-3" class="tab-label-3">CONTACT</label>
+
+                    <!--               <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+                                <label for="tab-4" class="tab-label-4">Contact</label> -->
+
+                    <div class="clear-shadow"></div>
+
+                    <div class="content">
+                        <div class="content-1">
+                            <h3><strong>creatrix</strong></h3><br><br>
+							<p>Where structures speak the human language.<br></p>
+                            <p><span class="date">On 28th October</span><br>
+
+                             Do you think you can crack the challenge with available materials? Do you think you can fabricate your ideas into prescribed structure that meet prescribed test conditions? .If a positive reply follows don't stay and think for another second. Load yourself with creativity and be there at Pantheon to showcase your talent and tricks.  
+                            </p><br><br>
+                            <h3>prizes</h3>
+                            <p><b>Prizes worth 12k !<br>
+                            </b></p>
+
+                        </div>
+                        <div class="content-2">
+                            <h3><strong>creatrix</strong></h3><br><br>
+
+                            <p>1. Use of mobile phones and other electronic gadgets are not allowed during the test,unless specified.<br>
+                                2. The participants should abide by the timings and venues of the event and any participants violating the rules will be disqualified.<br>
+                                3. The decisions of the judges in respective rounds will be the final.<br>
+                            </p>
+                        </div>
+                        <div class="content-3">
+                            <h3><strong>creatrix</strong></h3><br><br>
+
+                            <p>
+                                Sooraj Suseelan  7025342644 <br>
+                                Bhadra           8281522397
+
+
+
+                            </p>
+
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+
+
+            <div class="layer six">
+                <section class="tabs ">
+                    <input id="tab-1" type="radio" name="radio-set-6" class="tab-selector-1" checked="checked" />
+                    <label for="tab-1" class="tab-label-1">DESCRIPTION</label>
+
+                    <input id="tab-2" type="radio" name="radio-set-6" class="tab-selector-2" />
+                    <label for="tab-2" class="tab-label-2">RULES</label>
+
+                    <input id="tab-3" type="radio" name="radio-set-6" class="tab-selector-3" />
+                    <label for="tab-3" class="tab-label-3">CONTACT</label>
+
+                    <!--               <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+                                <label for="tab-4" class="tab-label-4">Contact</label> -->
+
+                    <div class="clear-shadow"></div>
+
+                    <div class="content">
+                        <div class="content-1">
+                            <h3><strong>enigma</strong></h3><br><br>
+							<p>The hunt is on!<br>
+                            <p> <span class="date">On 27th October </span></p> <br>
+                            <p>"Bravery isn't when you go looking for trouble; bravery is when trouble comes looking for you". We invite u to a saga,  where your only hope of survival is to be smart" . So its time to wakeup the analyst in you. Its your duty to avoid any more innocent blood from being spilt, even if its yours.Set out for an adrenaline packed hunt as u venture through the dark world of mysteries. Beware, 'cause the killer is  probably waiting for you.
+                             </p><br><br>
+                            <h3>prizes</h3>
+
+                            <p><b>Prizes worth 12k !<br>
+                            </b></p>
+
+                        </div>
+                        <div class="content-2">
+                            <h3><strong>enigma</strong></h3><br><br>
+
+                            <p>Team of 4 members<br>
+                                
+
+
+                            </p>
+                        </div>
+                        <div class="content-3">
+                            <h3><strong>enigma</strong></h3><br><br>
+
+                            <p>
+                                Ardra     9495686421 <br>
+                                Aravind  9539006177
+
+
+
+                            </p>
+
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+
+
+            <div class="layer seven">
+                <section class="tabs ">
+                    <input id="tab-1" type="radio" name="radio-set-7" class="tab-selector-1" checked="checked" />
+                    <label for="tab-1" class="tab-label-1">DESCRIPTION</label>
+
+                    <input id="tab-2" type="radio" name="radio-set-7" class="tab-selector-2" />
+                    <label for="tab-2" class="tab-label-2">RULES</label>
+
+                    <input id="tab-3" type="radio" name="radio-set-7" class="tab-selector-3" />
+                    <label for="tab-3" class="tab-label-3">CONTACT</label>
+
+                    <!--               <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+                                <label for="tab-4" class="tab-label-4">Contact</label> -->
+
+                    <div class="clear-shadow"></div>
+
+                    <div class="content">
+                        <div class="content-1">
+                            <h3><strong>build my city</strong></h3><br><br>
+							<p>Have you ever dreamed about building your very own city?<br>
+                            <p><span class="date"> On october 27th & 28th</span><br>
+
+                                Is planning and resource management your forte? If yes, here’s your chance to think big!!Pantheon presents BUILD MY CITY, designed to test your Planning, Creativity & Construction skills via gamification. Come, play & build the city of your dreams!</p><br><br>
+                            <h3>prizes</h3>
+                            <p><b>Prizes worth 12k!<br>
+
+
+                            </b></p>
+
+                        </div>
+                        <div class="content-2">
+                            <h3><strong>build my city</strong></h3><br><br>
+
+                            <p>Duration: 3 hrs<br>
+                               Building and expanding a city as much as possible within the allotted time at the location specified. Judging based on Population, Money, Approval rating & Overall design of the city at the end of allotted time.<br>
+							   1. participation of the event asa individual or a group of maximum 3.<br>
+                               2. no cheat codes are permitted.<br>
+                               3. participants cannot restart the game at any point during the alloted time.<br>
+
+                            </p>
+                        </div>
+                        <div class="content-3">
+                            <h3><strong>build my city</strong></h3><br><br>
+
+                            <p>
+                                ROHIT RAVIKUMAR 8281574957 <br>
+                                SIDDHANTH 9446502263
+
+
+
+
+
+                            </p>
+
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+
+
+            <div class="layer eight">
+                <section class="tabs ">
+                    <input id="tab-1" type="radio" name="radio-set-8" class="tab-selector-1" checked="checked" />
+                    <label for="tab-1" class="tab-label-1">DESCRIPTION</label>
+
+                    <input id="tab-2" type="radio" name="radio-set-8" class="tab-selector-2" />
+                    <label for="tab-2" class="tab-label-2">RULES</label>
+
+                    <input id="tab-3" type="radio" name="radio-set-8" class="tab-selector-3" />
+                    <label for="tab-3" class="tab-label-3">CONTACT</label>
+
+                    <!--               <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+                                <label for="tab-4" class="tab-label-4">Contact</label> -->
+
+                    <div class="clear-shadow"></div>
+
+                    <div class="content">
+                        <div class="content-1">
+                            <h3><strong>eureka!</strong></h3><br><br>
+							<p>BE THE EXPERT<br>
+							</p>
+							<p><span class="date"> On 27th october</span><br>
+                            <p>All of us have sat through hours and hours of  interesting and sometimes, boring lectures. What does it take to make a good presentation? Is it really something for you? Select a topic. Get to the bottom. Research. Involve yourself in a topic. Be an expert. Finally, convince others that you are. The podium rests before you. A projector screen, behind. This Pantheon, overcome your stage fright, think deep, answer all questions, be the expert.</p><br><br>
+                            <h3>prizes</h3>
+                            <p><b>Prizes worth 10k !<br>
+                            </b></p>
+							<br>
+                        </div>
+                        <div class="content-2">
+                            <h3><strong>eureka!</strong></h3><br><br>
+
+                            <p> • You may work as a team of 1 or 2.<br>
+                                • Abstract should be submitted on or before 20th October 2017.Send it to eurekapantheon@gmail.com<br>
+                                • Participants should have a clear idea about their subject.<br>
+                                • Selected participants will be informed about their next level thereafter.<br>
+                                • Final round presentation must not exceed the time limit of 15 minutes.<br>
+                                • An additional 10 minutes will be alloted for Q&A sessions with the judges.
+
+                            </p>
+                        </div>
+                        <div class="content-3">
+                            <h3><strong>eureka!</strong></h3><br><br>
+
+                            <p>
+                                Susan Francis  9496189180 <br>
+                                Sheina Cathy Prasad 9495645048
+
+
+
+
+
+
+                            </p>
+
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+
+            <div class="layer nine">
+                <section class="tabs ">
+                    <input id="tab-1" type="radio" name="radio-set-9" class="tab-selector-1" checked="checked" />
+                    <label for="tab-1" class="tab-label-1">DESCRIPTION</label>
+
+                    <input id="tab-2" type="radio" name="radio-set-9" class="tab-selector-2" />
+                    <label for="tab-2" class="tab-label-2">RULES</label>
+
+                    <input id="tab-3" type="radio" name="radio-set-9" class="tab-selector-3" />
+                    <label for="tab-3" class="tab-label-3">CONTACT</label>
+
+                    <!--               <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+                                <label for="tab-4" class="tab-label-4">Contact</label> -->
+
+                    <div class="clear-shadow"></div>
+
+                    <div class="content">
+                        <div class="content-1">
+                            <h3><strong>la caza</strong></h3><br><br>
+							<p></p>
+							<p><span class="date"> starts on october 22</span><br>
+							<p>Seek and you shall find !!!<br>
+            
+                             "There are extraordinary things in your everyday life and hidden treasure in familiar shadows".Chase the shadows, procure the clues and unveil the treasure.
+
+                             For all the seekers out there we present to you online treasure hunt in association with pantheon.</p>
+							
+                            <p></p><br><br>
+                            <h3>prizes</h3>
+                            <p><b>prize worth 3k</b><br>
+
+
+                                </b></p>
+
+                        </div>
+                        <div class="content-2">
+                            <h3><strong>la caza</strong></h3><br><br>
+
+                            <p>•Starts on october 22nd<br>
+			                     <a href="http://lacaza.pantheoncet.com/"><strong>starts now!</strong></a><br>
+				                For more details visit<a href="https://www.facebook.com/lacazapantheon"><strong>fb.com/lacazapantheon</strong></a><br>
+                                
+
+                            
+
+
+
+                            </p>
+                        </div>
+                        <div class="content-3">
+                            <h3><strong>la caza</strong></h3><br><br>
+
+                            <p>
+                                 <a href="https://www.facebook.com/lacazapantheon"><strong>fb.com/lacazapantheon</strong></a><br><br>
+                                
+
+
+
+
+
+
+
+                            </p>
+
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+
+            <div class="layer ten">
+                <section class="tabs workshop">
+                    <input id="tab-1" type="radio" name="radio-set-10" class="tab-selector-1" checked="checked" />
+                    <!--      <label for="tab-1" class="tab-label-1">DESCRIPTION</label> -->
+
+
+                    <!--               <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+                                <label for="tab-4" class="tab-label-4">Contact</label> -->
+
+                    <div class="clear-shadow"></div>
+
+                    <div class="content  workshop">
+                        <div class="content-1">
+                            <h3><strong>revit workshop</strong></h3><br>
+                            <P>On October 27
+                            <p>here is a chance to learn revit software! a smart solution for creating accurate plans for building information modelling in 3d and more.</p><br><br>
+                            <h3>contact</h3>
+                            <p>sanith 9020312343   	   athul p 9497744853<br>
+                            </p>
+                            <h3>REG FEE : <p>RS.400/-</p></h3>
+
+                        </div>
+
+                </section>
+
+
+
+                <div class="layer eleven">
+                    <section class="tabs workshop">
+                        <input id="tab-1" type="radio" name="radio-set-11" class="tab-selector-1" checked="checked" />
+
+                        <div class="clear-shadow"></div>
+
+                        <div class="content  workshop">
+                            <div class="content-1">
+
+
+                                <h3><strong>e4cog </strong></h3><br>
+                                <p>on october 27 & 28</p>
+                                <p>2 day workshop to enrich yourself with the approprite mix ratio from the mix design workshop. </p><br><br>
+                                <h3>contact</h3>
+                                <p>sarath 9497011668<br>
+                                    Arthana 8606231982
+                                </p>
+                                <h3>REG FEE : <p>RS. 400/-</p></h3>
+
+                                </p>
+
+                            </div>
+
+                    </section>
+                </div>
+
+                <div class="layer twelve">
+                    <section class="tabs workshop">
+                        <input id="tab-1" type="radio" name="radio-set-12" class="tab-selector-1" checked="checked" />
+                        <!--      <label for="tab-1" class="tab-label-1">DESCRIPTION</label> -->
+
+
+                        <!--               <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+                                    <label for="tab-4" class="tab-label-4">Contact</label> -->
+
+                        <div class="clear-shadow"></div>
+
+                        <div class="content  workshop">
+                            <div class="content-1">
+                                <h3><strong>3ds max workshop</strong></h3><br>
+                                <p>on october 28</p>
+                                <p>this is a professional 3d software which will help you to create massive worlds in games,stunning scenes for design visualization and engaging virtual reality expereiences..</p><br><br>
+                                <h3>contact</h3>
+                                <p>sanith 9020312343   	   athul p 9497744853<br>
+                                    
+                                </p>
+                                <h3>REG FEE : <p>RS. 400/-</p></h3>
+
+                            </div>
+
+                    </section>
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </article>
+
+        <ul class="bullets events">
+            <li id="e1">transcendence</li>
+            <li id="e2">best engineer</li>
+            <li id="e3">stake out</li>
+            <li id="e4">the eleventh hour</li>
+            <li id="e5">creatrix</li>
+            <li id="e6">enigma</li>
+            <li id="e7">build my city</li>
+            <li id="e8">eureka!</li>
+            <li id="e9">la caza</li>
+			<li id="e9">focus</li>
+        </ul>
+
+        <ul class="bullets workshop">
+
+            <li id="w1">Revit Workshop</li>
+            <li id="w2">Mix Design Workshop</li>
+            <li id="w3">3ds max workshop</li>
+        </ul>
+
+
+
+        <script>
+            // Create a new instance of kontext
+            var k = kontext( document.querySelector( '.kontext' ) );
+            var bulletsContainer = document.body.querySelector( '.bullets' );
+
+            var bullet1 = document.getElementById( 'e1' );
+            bullet1.classList.add('active');
+            bullet1.onclick =  function( event ) {k.show(0);   } ;
+            bullet1.ontouchstart = function( event ) { k.show(0 );    };
+            var bullet2 = document.getElementById( 'e2' );
+            bullet2.onclick = function( event ) { k.show( 1 );   };
+            bullet2.ontouchstart = function( event ) { k.show( 1 );   };
+
+            var bullet3 = document.getElementById( 'e3' );
+            bullet3.onclick =  function( event ) {k.show(2);   } ;
+            bullet3.ontouchstart = function( event ) { k.show(2 ); };
+            var bullet4 = document.getElementById( 'e4' );
+            bullet4.onclick = function( event ) { k.show( 3 );   };
+            bullet4.ontouchstart = function( event ) { k.show( 3 );   };
+
+            var bullet8 = document.getElementById( 'e5' );
+            bullet8.onclick = function( event ) { k.show( 4 );   };
+            bullet8.ontouchstart = function( event ) { k.show( 4 );   };
+
+            var bullet9 = document.getElementById( 'e6' );
+            bullet9.onclick = function( event ) { k.show( 5 );   };
+            bullet9.ontouchstart = function( event ) { k.show( 5 );   };
+
+            var bullet10 = document.getElementById( 'e7' );
+            bullet10.onclick = function( event ) { k.show( 6);   };
+            bullet10.ontouchstart = function( event ) { k.show( 6 );   };
+
+            var bullet11 = document.getElementById( 'e8' );
+            bullet11.onclick = function( event ) { k.show( 7 );   };
+            bullet11.ontouchstart = function( event ) { k.show( 7 );   };
+
+            var bullet12 = document.getElementById( 'e9' );
+            bullet12.onclick = function( event ) { k.show( 8 );   };
+            bullet12.ontouchstart = function( event ) { k.show( 8 );   };
+
+
+            var bullet5 = document.getElementById( 'w1' );
+            bullet5.onclick = function( event ) { k.show( 9 );   };
+            bullet5.ontouchstart = function( event ) { k.show( 9 );   };
+
+            var bullet6 = document.getElementById( 'w2' );
+            bullet6.onclick = function( event ) { k.show( 10 );   };
+            bullet6.ontouchstart = function( event ) { k.show( 10 );   };
+
+            var bullet7 = document.getElementById( 'w3' );
+            bullet7.onclick = function( event ) { k.show( 11 );   };
+            bullet7.ontouchstart = function( event ) { k.show( 11 );   };
+
+
+
+            // Update the bullets when the layer changes
+            k.changed.add( function( layer, index ) {
+                var bullets = document.body.querySelectorAll( '.bullets li' );
+                for( var i = 0, len = bullets.length; i < len; i++ ) {
+                    bullets[i].className = i === index ? 'active' : '';
+                }
+            } );
+
+            var list = document.addEventListener( 'keyup', function( event ) {
+                event.preventDefault();
+                if( event.keyCode === 37 ) k.prev();
+                if( event.keyCode === 39 ) k.next();
+            }, false );
+
+            var touchX = 0;
+            var touchConsumed = false;
+
+            document.addEventListener( 'touchstart', function( event ) {
+                touchConsumed = false;
+                lastX = event.touches[0].clientX;
+            }, false );
+
+            document.addEventListener( 'touchmove', function( event ) {
+                event.preventDefault();
+
+                if( !touchConsumed ) {
+                    if( event.touches[0].clientX > lastX + 10 ) {
+                        k.prev();
+                        touchConsumed = true;
+                    }
+                    else if( event.touches[0].clientX < lastX - 10 ) {
+                        k.next();
+                        touchConsumed = true;
+                    }
+                }
+            }, false );
+
+        </script>
+
+
+    </section>
+    <section class="vertical-scrolling demo-2" id="mrph">
+
+        <div class="main">
+            <div id="page_title_gallery">GALLERY</div>
+            <div id="morph-shape" class="morph-shape" data-morph-next="M301,301c0,0-83.8-21-151-21C71.8,280-1,301-1,301s21-65.7,21-151C20,79.936-1-1-1-1s73,11,151,11c85,0,151-11,151-11
+      s-21,66.43-21,151C280,229.646,301,301,301,301z">
+                <svg width="100%" height="100%" viewBox="0 0 300 300" preserveAspectRatio="none">
+                    <path d="M301,301c0,0-83.8,0-151,0c-78.2,0-151,0-151,0s0-65.7,0-151C-1,79.936-1-1-1-1s73,0,151,0c85,0,151,0,151,0s0,66.43,0,151
+    C301,229.646,301,301,301,301z" />
+                </svg>
+            </div>
+            <div class="container">
+
+
+                <!--  <p class="info"><strong>Drag the stack or click the button to navigate.</strong></p> -->
+
+                <div class="stack">
+                    <ul id="elasticstack" class="stack__images">
+                        <li><img src="gallery/gall1.jpg" alt="01"/></li>
+                        <li><img src="gallery/gall2.jpg" alt="02"/></li>
+                        <li><img src="gallery/gall3.jpg" alt="03"/></li>
+                        <li><img src="gallery/gall4.jpg" alt="04"/></li>
+                        <li><img src="gallery/gall5.jpg" alt="05"/></li>
+                        <li><img src="gallery/gall6.jpg" alt="06"/></li>
+                        <li><img src="gallery/gall7.jpg" alt="07"/></li>
+                        <li><img src="gallery/gall8.jpg" alt="08"/></li>
+                        <li><img src="gallery/gall9.jpg" alt="09"/></li>
+                        <li><img src="gallery/gall10.jpg" alt="10"/></li>
+                        <li><img src="gallery/gall11.jpg" alt="11"/></li>
+                        <li><img src="gallery/gall12.jpg" alt="12"/></li>
+                        <li><img src="gallery/gall13.jpg" alt="13"/></li>
+                        <li><img src="gallery/gall14.jpg" alt="14"/></li>
+                        <li><img src="gallery/gall15.jpg" alt="15"/></li>
+                        <li><img src="gallery/gall16.jpg" alt="16"/></li>
+                        <li><img src="gallery/gall17.jpg" alt="17"/></li>
+                        <li><img src="gallery/gall18.jpg" alt="18"/></li>
+                        <li><img src="gallery/gall19.jpg" alt="19"/></li>
+                        <li><img src="gallery/gall20.jpg" alt="20"/></li>
+                        <li><img src="gallery/gall21.jpg" alt="21"/></li>
+                        <li><img src="gallery/gall22.jpg" alt="22"/></li>
+                        <li><img src="gallery/gall23.jpg" alt="23"/></li>
+                        <li><img src="gallery/gall24.jpg" alt="24"/></li>
+
+
+                    </ul>
+                    <button id="stack-next" class="stack__next" text="Next">NEXT</button>
+                    <ul id="stack-titles" class="stack__titles">
+                        <li class="current">
+                            <blockquote>
+                                <p>The centre of attraction</p>
+                                <footer>PANTHEON,ROME scaled model</footer>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>EXHIBITIONS</p>
+                                <footer>Creativity from intelligent hearts</footer>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>EXHIBITIONS</p>
+                                <footer>More than 30 models by students of CET</footer>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>OVERHELMING PARTICIPATION</p>
+                                <footer>From best engineer prilims</footer>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>PARTICIPATION</p>
+                                <footer>Above 200 registrations</footer>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>FOUR EVENTS</p>
+                                <footer> Best Engineer | Tech Hunt | Model Making | Workshop </footer>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>WORKSHOP</p>
+                                <footer>Mix design workshop conducted In association with Ultratech Cements </footer>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>MIX DESIGN</p>
+                                <footer>Under active supervision of Executives from Ultratech</footer>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>INFORMALS</p>
+                                <footer>MADE THE FEST MORE ENERGETIC</footer>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>INFORMALS</p>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>MODEL MAKING</p>
+                                <footer>BEGINING OF STRUCTURAL MODELIING</footer>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>MODEL MAKING</p>
+                                <footer>LOADING THE MODELS</footer>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>BEST ENGINEER</p>
+                                <footer>BOND MAKING ROUND</footer>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>BEST ENGINEER</p>
+                                <footer>BOND MAKING ROUND</footer>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>BEST ENGINEER</p>
+                                <footer>QUIZ ROUND  BY HARIKRISHNAN,IRS </footer>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>BEST ENGINEER</p>
+                                <footer>QUIZ ROUND</footer>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>CLOSING CEREMONY AND  CONCRETE DAY CELEBRATION</p>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>CLOSING CEREMONY AND  CONCRETE DAY CELEBRATION</p>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>CLOSING CEREMONY AND  CONCRETE DAY CELEBRATION</p>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>BEST ENGINEER</p>
+                                <footer>INAUGURATED K.G.K MOORTHY (DIRECTOR-CORPORATE, CERA CHEM)</footer>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>CLOSING CEREMONY AND  CONCRETE DAY CELEBRATION</p>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>CLOSING CEREMONY AND  CONCRETE DAY CELEBRATION</p>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>PRIZE DISTRIBUTION</p>
+                                <footer>BEST ENGINEER WINNER</footer>
+                            </blockquote>
+                        </li>
+                        <li>
+                            <blockquote>
+                                <p>PRIZE DISTRIBUTION</p>
+                                <footer>MODEL MAKING WINNERS</footer>
+                            </blockquote>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>    <script src="js/draggabilly.pkgd.min.js"></script>
+        <script src="js/elastiStack.js"></script>
+        <script>
+            (function() {
+                var body = document.getElementById('mrph'),
+                        titles = [].slice.call( document.querySelectorAll( '#stack-titles > li' ) ),
+                        totalTitles = titles.length,
+                        stack = new ElastiStack( document.getElementById( 'elasticstack' ), {
+                            onUpdateStack : function( idx ) {
+                                classie.remove( titles[idx === 0 ? totalTitles - 1 : idx - 1], 'current' );
+                                classie.add( titles[idx], 'current' );
+                            }
+                        } ),
+                        shapeEl = document.getElementById( 'morph-shape' ),
+                        s = Snap( shapeEl.querySelector( 'svg' ) ),
+                        pathEl = s.select( 'path' ),
+                        paths = {
+                            reset : pathEl.attr( 'd' ),
+                            next  : shapeEl.getAttribute( 'data-morph-next' )
+                        };
+
+                document.getElementById( 'stack-next' ).addEventListener( 'mousedown', nextItem );
+
+                function nextItem() {
+                    classie.add( body, 'animating' );
+                    classie.add( body, 'navigate-next' );
+                    pathEl.stop().animate( { 'path' : paths.next }, 450, mina.easeinout, function() {
+                        classie.remove( body, 'navigate-next' );
+                        stack.nextItem( { transform : 'rotate3d(0,0,1,3deg) translate3d(0,-40px,300px)' } );
+                        pathEl.stop().animate( { 'path' : paths.reset }, 100, mina.easeout, function() {
+                            classie.remove( body, 'animating' );
+                        } );
+                    } );
+                }
+            })();
+        </script>
+    </section>
+	<section class="vertical-scrolling">
+
+       <div class="banner">		
+		<div class="banr-info">
+			<div class="logo">
+				<a>Registration</a>
+			</div>
+		<!--	<div class="bnr-text">
+				<div class="container">
+					<div class="clearfix"></div>
+					<div class="col-md-12 contact-form">
+					<form method="post" id="reg-form" action="register.php">
+						<div class="col-md-6 contact-grids">
+						   <input type="text" placeholder="Name" name="name" required="required">
+                                    <input type="email" placeholder="Email" name="email" required="required">
+                                    <input type="text" placeholder="Telephone" name="phone" required="required">
+						</div>
+						<div class="col-md-6 contact-grids">
+							<input type="text" placeholder="College" name="college" required="required">
+							<select name="year"  required="required">
+                                    <option selected disabled>Year</option>
+                                    <option value="1st year">1st year </option>
+                                    <option value="2nd year">2nd year</option>
+                                    <option value="3rd year">3rd year</option>
+                                    <option value="4th year">4th year</option>
+                                </select>
+                                <input type="checkbox" name="accom" value="Yes">Need Accommodation?
+                            <br>
+                            <ul class="checkbox-grid" >
+                            <li style="display: block; float: left; width: 25%;"><input type="checkbox" name="Event[]" value=" Transcendence " />Transcendence</li>
+                        	<li style="display: block; float: left; width: 25%;"> <input type="checkbox" name="Event[]" value=" Stakeout " />Stakeout</li>
+	                        <li style="display: block; float: left; width: 25%;"><input type="checkbox" name="Event[]" value=" EleventhHour " />EleventhHour</li>
+	                        <li style="display: block; float: left; width: 25%;"><input type="checkbox" name="Event[]" value=" Creatrix " />Creatrix</li>
+	                        <li style="display: block; float: left; width: 25%;"><input type="checkbox" name="Event[]" value=" BestEngineer " />BestEngineer</li>
+	                        <li style="display: block; float: left; width: 25%;"><input type="checkbox" name="Event[]" value=" Enigma " />Enigma</li>
+	                        <li style="display: block; float: left; width: 25%;"><input type="checkbox" name="Event[]" value=" BuildMyCity " />BuildMyCity</li>
+	                        <li style="display: block; float: left; width: 25%;"><input type="checkbox" name="Event[]" value=" Eureka " />Eureka</li>
+	                        <li style="display: block; float: left; width: 25%;"><input type="checkbox" name="Event[]" value=" LaCaza " />LaCaza</li>
+	                        <li style="display: block; float: left; width: 25%;"><input type="checkbox" name="Event[]" value=" Revit " />Revit</li>
+	                        <li style="display: block; float: left; width: 25%;"><input type="checkbox" name="Event[]" value=" 3DSMax " />3DSMax</li>
+	                        <li style="display: block; float: left; width: 25%;"><input type="checkbox" name="Event[]" value=" MixDesign " />MixDesign</li>
+	                        </ul>
+                                    
+						</div>
+						<br>
+						<div clas="text-container">
+                                    For  accomodation queries  contact  <br> Ansa     94465 57908   <br>  Azhar   94978 58980
+                                </div>
+						  <input type="submit" value="Register" id="register" name="register">
+					</form>
+				    </div>
+				</div>
+			</div> -->
+			<div clas="text-container">
+                                    For  accomodation queries  contact  <br> Shilpa mol 9400877083 <br> SHIVA SASIDHAR 9400437782
+						  </div>
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe8afNKe2z1R1VfDUZiq-eiBA6SpRgxnIu_CBUslNKi0ArMrA/viewform?embedded=true" width="750" height="750" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+		</div>	
+    </div>	
+<!--<div id="openModal" class="modalDialog">
+    <div> <a title="Close" class="close">X</a>
+
+        <h2>Thank you</h2>
+
+        <p>YOU HAVE SUCCESSFULLY REGISTERED.</p>
+        <p>SEE YOU AT PANTHEON 2016.</p> <p>DON'T FORGET TO BRING YOUR COLLEGE ID</p>
+    </div>
+</div>
+
+
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+				});
+			});
+		</script> -->
+	
+    <script src="js/bootstrap.js"> </script>
+    <script src="js/grayscale.js"> </script>
+
+    </section>
+    <section class="vertical-scrolling">
+        <h3><br>Our team</h3>
+
+        <!--
+      <div class="grid">
+            <figure class="effect-jazz" >
+              <img src="team/mini.jpg" alt="img1"/>
+              <figcaption>
+              <h2>Dr. MINI SOMAN</h2>
+                <p>STAFF COORDINATOR</p>
+
+                <a href="https://www.facebook.com/profile.php?id=100010016746354&fref=ts" target="_blank">View more</a>
+              </figcaption>
+            </figure>
+            <figure class="effect-jazz" >
+              <img src="team/biju.jpg" alt="img2"/>
+              <figcaption>
+              <h2>Prof. BIJU V.</h2>
+                <p>STAFF COORDINATOR</p>
+                <a href="https://www.facebook.com/biju.vasudevan.988" target="_blank">View more</a>
+              </figcaption>
+            </figure>
+             <figure class="effect-jazz" >
+              <img src="team/sabah.jpg" alt="img3"/>
+              <figcaption>
+              <h2>ALSABAH R.</h2>
+                <p>CONVENOR</p>
+                <p>8281483376</p>
+                <a href="https://www.facebook.com/sabah.rawther" target="_blank">View more</a>
+              </figcaption>
+            </figure>
+             <figure class="effect-jazz" >
+              <img src="team/aminul.jpg" alt="img4"/>
+              <figcaption>
+              <h2>AMINUL HASSAN</h2>
+             <p>CO-CONVENOR</p>
+              <p>9747052752</p>
+
+                <a href="https://www.facebook.com/aminulanchal" target="_blank">View more</a>
+              </figcaption>
+            </figure>
+            <figure class="effect-jazz" >
+              <img src="team/nidhin.jpg" alt="img5"/>
+              <figcaption>
+              <h2>NIDHIN P S</h2>
+               <p>TECH HEAD</p>
+                 <p>9496350465</p>
+                <a href="https://www.facebook.com/psnidhin.ps.5" target="_blank">View more</a>
+              </figcaption>
+            </figure>
+
+            <figure class="effect-jazz" >
+              <img src="team/sreenath.jpg" alt="img6"/>
+              <figcaption>
+              <h2>SREENATH N</h2>
+                <p>TECH HEAD</p>
+                 <p>8547064074</p>
+                <a href="https://www.facebook.com/sreenath.nandakumar.5" target="_blank">View more</a>
+              </figcaption>
+            </figure>
+
+
+             <figure class="effect-jazz" >
+              <img src="team/nikhil.jpg" alt="img5"/>
+              <figcaption>
+              <h2>NIKHIL R V</h2>
+                <p>STUDENT CHAPTER SECRETARY</p>
+                <p>9446715321</p>
+                <a href="https://www.facebook.com/NRVrulessssss" target="_blank">View more</a>
+              </figcaption>
+            </figure>
+             <figure class="effect-jazz" >
+              <img src="team/jasin.jpg" alt="img5"/>
+              <figcaption>
+              <h2>JASIN G B</h2>
+                <p>TREASURER</p>
+                <p>9400497314</p>
+                <a href="https://www.facebook.com/jasin.gbalakrishnan" target="_blank">View more</a>
+              </figcaption>
+            </figure>
+
+             <figure class="effect-jazz" >
+              <img src="team/jishnu.jpg" alt="img5"/>
+              <figcaption>
+              <h2>JISHNU V</h2>
+                <p>WEBSITE DESIGNER</p>
+                <p>9446903694</p>
+                <a href="https://www.facebook.com/jishnu.vasanth" target="_blank">View more</a>
+              </figcaption>
+            </figure>
+
+            <figure class="effect-jazz" >
+              <img src="team/diljith.jpg" alt="img5"/>
+              <figcaption>
+              <h2>DILJITH D P</h2>
+                <p>WEBSITE DESIGNER</p>
+                <p>9400802545</p>
+                <a href="https://www.facebook.com/diljith.dp" target="_blank">View more</a>
+              </figcaption>
+            </figure>
+
+
+
+          </div>
+
+          -->
+
+        <div class="adv">
+            <ul class="list">
+                <li><span class="date">EVENT CONVENOR</span> </li>
+                <li>HARIKRISHNAN K S 9037117369</li>
+                <br>
+                <li><span class="date">EVENT COORDINATORS </span></li>
+                <li>KIRAN GOPAL 9496447958</li>
+
+                <li>SHREYA SUSAN GEORGE 9446684490   </li>
+                <br>
+                <li><span class="date">PUBLICITY HEADS</li>
+                <li>PRASOON M 8088888684</li>
+                <li>FASEEH K P 7736157151 </li>
+                <br>
+                <li><span class="date">SPONSORSHIP HEADS</li>
+                <li>ABEETH S 8547535134 </li>
+                <li>AMLAS K P 9656267755</li>
+                <br>
+                <li><span class="date">CO-CONVENORS</li>
+                <li>ABIN PAVUS 7012054957 </li>
+				<li>RAFEED 9400501874</li>
+                <br>
+                <li><span class="date">Accommodation                           </li>
+                <li>SHIVA SASIDHAR 9400437782 </li>
+                <li>SHILPAMOL T S 8281961083  </li>
+                <br>
+                <li> <span class="date">Registration   </li>
+                <li>  AKHIL JOHNSON 9497371638                           </li>
+
+                <li>ANJU JOSHY 8281828873 </li>
+
+
+            </ul>
+
+        </div>
+
+
+    </section>
+
+
+    <section class="vertical-scrolling">
+
+        <div id='browser'>
+            <div id='browser-bar'>
+                <h3>Contact Us</h3>
+            </div>
+            <div id='content'>
+                <div id='left'>
+                    <div id="googleMap" ></div>
+
+                </div>
+                <div id='right'>
+                    <p>Connect</p>
+                    <div id='social'>
+                        <a class='social'>
+                            <a href="https://www.facebook.com/pantheoncet" target="_blank"><span class='brandico-facebook'></span></a>
+                        </a>
+                        <a class='social'>
+                            <a href="https://www.twitter.com/Pantheoncet" target="_blank"><span class='zocial-twitter'></span></a>
+                        </a>
+                        <a class='social'>
+                            <a href="https://google.com/+Pantheoncet" target="_blank"><span class='zocial-googleplus'>
+            </span></a>
+                        </a>
+                        <a class='social'>
+                            <a href="https://www.youtube.com/channel/UC2LdWSxqAorpYvVQS1sPH5g" target="_blank"><span class='zocial-youtube'></span>
+                            </a></a>
+                    </div>
+                    <form id="contact-send">
+                        <p>Get in Contact</p>
+                        <input placeholder='Email' type='email' name="email">
+                        <input placeholder='Subject' type='text' name="subject">
+                        <textarea placeholder='Message' rows='4' name="message"></textarea>
+                        <input placeholder='Send' type='submit' id="contact-submit">
+
+                    </form>
+
+                    <p>other way</p>
+                    <p class='other entypo-mail'>
+                        <a href='#' style="text-transform:none;">pantheon4ici@gmail.com</a>
+                    </p>
+                    <p class='other entypo-phone'>ANJU JOSHY  +918281828873</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+
+    <section class="vertical-scrolling tilt-grid grid--examples">
+
+        <div id="page_title_sponsor">Previous Sponsors</div>
+
+
+        <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+                <img src="img/raj tech.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+        "opacity" : 0.5,
+        "bgfixed" : true,
+        "movement": { 
+          "perspective" : 500, 
+          "translateX" : -15, 
+          "translateY" : -15, 
+          "translateZ" : 20, 
+          "rotateX" : 15, 
+          "rotateY" : 15 
+        }}' />
+
+            </div>
+        </li>
+
+        <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+                <img src="img/gate.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+        "opacity" : 0.5,
+        "bgfixed" : true,
+        "movement": { 
+          "perspective" : 500, 
+          "translateX" : -15, 
+          "translateY" : -15, 
+          "translateZ" : 20, 
+          "rotateX" : 15, 
+          "rotateY" : 15 
+        }}' />
+
+            </div>
+        </li>
+
+        <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+                <img src="img/chopras.png" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+        "opacity" : 0.5,
+        "bgfixed" : true,
+        "movement": { 
+          "perspective" : 500, 
+          "translateX" : -15, 
+          "translateY" : -15, 
+          "translateZ" : 20, 
+          "rotateX" : 15, 
+          "rotateY" : 15 
+        }}' />
+
+            </div>
+        </li>
+
+
+        <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+                <img src="img/art tech.png" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+        "opacity" : 0.5,
+        "bgfixed" : true,
+        "movement": { 
+          "perspective" : 500, 
+          "translateX" : -15, 
+          "translateY" : -15, 
+          "translateZ" : 20, 
+          "rotateX" : 15, 
+          "rotateY" : 15 
+        }}' />
+
+            </div>
+        </li>
+
+
+        <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+                <img src="img/sfs.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+        "opacity" : 0.5,
+        "bgfixed" : true,
+        "movement": { 
+          "perspective" : 500, 
+          "translateX" : -15, 
+          "translateY" : -15, 
+          "translateZ" : 20, 
+          "rotateX" : 15, 
+          "rotateY" : 15 
+        }}' />
+
+
+            </div>
+        </li>
+
+        <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+                <img src="img/ultra.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+        "opacity" : 0.5,
+        "bgfixed" : true,
+        "movement": { 
+          "perspective" : 500, 
+          "translateX" : -15, 
+          "translateY" : -15, 
+          "translateZ" : 20, 
+          "rotateX" : 15, 
+          "rotateY" : 15 
+        }}' />
+
+
+
+            </div>
+        </li>
+
+        <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+                <img src="img/contconstr.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+        "opacity" : 0.5,
+        "bgfixed" : true,
+        "movement": { 
+          "perspective" : 500, 
+          "translateX" : -15, 
+          "translateY" : -15, 
+          "translateZ" : 20, 
+          "rotateX" : 15, 
+          "rotateY" : 15 
+        }}' />
+
+            </div>
+        </li>
+
+        <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+                <img src="img/cont.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+        "opacity" : 0.5,
+        "bgfixed" : true,
+        "movement": { 
+          "perspective" : 500, 
+          "translateX" : -15, 
+          "translateY" : -15, 
+          "translateZ" : 20, 
+          "rotateX" : 15, 
+          "rotateY" : 15 
+        }}' />
+
+            </div>
+        </li>
+
+        <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+                <img src="img/cres.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+        "opacity" : 0.5,
+        "bgfixed" : true,
+        "movement": { 
+          "perspective" : 500, 
+          "translateX" : -15, 
+          "translateY" : -15, 
+          "translateZ" : 20, 
+          "rotateX" : 15, 
+          "rotateY" : 15 
+        }}' />
+
+            </div>
+        </li>
+
+        <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+                <img src="img/gco.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+        "opacity" : 0.5,
+        "bgfixed" : true,
+        "movement": { 
+          "perspective" : 500, 
+          "translateX" : -15, 
+          "translateY" : -15, 
+          "translateZ" : 20, 
+          "rotateX" : 15, 
+          "rotateY" : 15 
+        }}' />
+
+            </div>
+        </li>
+        <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+                <img src="img/se.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+        "opacity" : 0.5,
+        "bgfixed" : true,
+        "movement": { 
+          "perspective" : 500, 
+          "translateX" : -15, 
+          "translateY" : -15, 
+          "translateZ" : 20, 
+          "rotateX" : 15, 
+          "rotateY" : 15 
+        }}' />
+
+            </div>
+        </li>
+
+
+        <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+                <img src="img/kinfra.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+        "opacity" : 0.5,
+        "bgfixed" : true,
+        "movement": { 
+          "perspective" : 500, 
+          "translateX" : -15, 
+          "translateY" : -15, 
+          "translateZ" : 20, 
+          "rotateX" : 15, 
+          "rotateY" : 15 
+        }}' />
+
+            </div>
+        </li>
+
+        <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+                <img src="img/ksbc.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+        "opacity" : 0.5,
+        "bgfixed" : true,
+        "movement": { 
+          "perspective" : 500, 
+          "translateX" : -15, 
+          "translateY" : -15, 
+          "translateZ" : 20, 
+          "rotateX" : 15, 
+          "rotateY" : 15 
+        }}' />
+        <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+                <img src="img/neptune.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+        "opacity" : 0.5,
+        "bgfixed" : true,
+        "movement": { 
+          "perspective" : 500, 
+          "translateX" : -15, 
+          "translateY" : -15, 
+          "translateZ" : 20, 
+          "rotateX" : 15, 
+          "rotateY" : 15 
+        }}' />
+
+            </div>
+        </li>
+
+        <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+                <img src="img/poabs.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+        "opacity" : 0.5,
+        "bgfixed" : true,
+        "movement": { 
+          "perspective" : 500, 
+          "translateX" : -15, 
+          "translateY" : -15, 
+          "translateZ" : 20, 
+          "rotateX" : 15, 
+          "rotateY" : 15 
+        }}' />
+
+            </div>
+        </li>
+
+        <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+                <img src="img/thali.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+        "opacity" : 0.5,
+        "bgfixed" : true,
+        "movement": { 
+          "perspective" : 500, 
+          "translateX" : -15, 
+          "translateY" : -15, 
+          "translateZ" : 20, 
+          "rotateX" : 15, 
+          "rotateY" : 15 
+        }}' />
+
+            </div>
+        </li>
+
+
+</div>
+</li>
+
+
+
+<li class="grid__item">
+    <div class="grid__img grid__img--example-4">
+        <img src="img/tilt.jpg" class="tilt-effect" alt="grid04"  data-tilt-options='{ "opacity" : 0.8, "bgfixed" : false, "extraImgs" : 3, "movement": { "perspective" : 1500, "translateX" : 80, "translateY" : 80, "translateZ" : 0, "rotateY" : 20 } }' />
+    </div>
+</li>
+</ul>
+
+
+
+</section>
+
+
+
+
+
+</div>
+
+
+<script src="js/kontext.js"></script>
+<script type="text/javascript" src="js/canvas.js"></script>
+<script src="js/tiltfx.js"></script>
+<script src="js/forkit.js"></script>
+
+<script>
+
+    // ----------------------------------------
+    // Particle
+    // ----------------------------------------
+
+    function Particle( x, y, radius ) {
+        this.init( x, y, radius );
+    }
+
+    Particle.prototype = {
+
+        init: function( x, y, radius ) {
+
+            this.alive = true;
+
+            this.radius = radius || 10;
+            this.wander = 0.15;
+            this.theta = random( TWO_PI );
+            this.drag = 0.92;
+            this.color = '#fff';
+
+            this.x = x || 0.0;
+            this.y = y || 0.0;
+
+            this.vx = 0.0;
+            this.vy = 0.0;
+        },
+
+        move: function() {
+
+            this.x += this.vx;
+            this.y += this.vy;
+
+            this.vx *= this.drag;
+            this.vy *= this.drag;
+
+            this.theta += random( -0.5, 0.5 ) * this.wander;
+            this.vx += sin( this.theta ) * 0.1;
+            this.vy += cos( this.theta ) * 0.1;
+
+            this.radius *= 0.96;
+            this.alive = this.radius > 0.5;
+        },
+
+        draw: function( ctx ) {
+
+            ctx.beginPath();
+            ctx.arc( this.x, this.y, this.radius, 0, TWO_PI );
+            ctx.fillStyle = this.color;
+            ctx.fill();
+        }
+    };
+
+    // ----------------------------------------
+    // Example
+    // ----------------------------------------
+
+    var MAX_PARTICLES = 50;
+    var COLOURS = [ '#69D2E7', '#A7DBD8', '#E0E4CC', '#F38630', '#FA6900', '#FF4E50', '#F9D423' ];
+
+    var particles = [];
+    var pool = [];
+
+    var demo = Sketch.create({
+        container: document.getElementById( 'container' )
+    });
+
+    demo.setup = function() {
+
+        // Set off some initial particles.
+        var i, x, y;
+
+        for ( i = 0; i < 20; i++ ) {
+            x = ( demo.width * 0.5 ) + random( -100, 100 );
+            y = ( demo.height * 0.5 ) + random( -100, 100 );
+            demo.spawn( x, y );
+        }
+    };
+
+    demo.spawn = function( x, y ) {
+
+        if ( particles.length >= MAX_PARTICLES )
+            pool.push( particles.shift() );
+
+        particle = pool.length ? pool.pop() : new Particle();
+        particle.init( x, y, random( 5, 40 ) );
+
+        particle.wander = random( 0.5, 2.0 );
+        particle.color = random( COLOURS );
+        particle.drag = random( 0.9, 0.99 );
+
+        theta = random( TWO_PI );
+        force = random( 2, 8 );
+
+        particle.vx = sin( theta ) * force;
+        particle.vy = cos( theta ) * force;
+
+        particles.push( particle );
+    };
+
+    demo.update = function() {
+
+        var i, particle;
+
+        for ( i = particles.length - 1; i >= 0; i-- ) {
+
+            particle = particles[i];
+
+            if ( particle.alive ) particle.move();
+            else pool.push( particles.splice( i, 1 )[0] );
+        }
+    };
+
+    demo.draw = function() {
+
+        demo.globalCompositeOperation  = 'lighter';
+
+        for ( var i = particles.length - 1; i >= 0; i-- ) {
+            particles[i].draw( demo );
+        }
+    };
+
+    demo.mousemove = function() {
+
+        var particle, theta, force, touch, max, i, j, n;
+
+        for ( i = 0, n = demo.touches.length; i < n; i++ ) {
+
+            touch = demo.touches[i], max = random( 1, 4 );
+            for ( j = 0; j < max; j++ ) {
+                demo.spawn( touch.x, touch.y );
+            }
+
+        }
+    };
+
+
+</script>
+<script>
+    var myCenter=new google.maps.LatLng(8.5468118,76.9054529);
+    var marker;
+
+    function initialize()
+    {
+        var mapProp = {
+            center:myCenter,
+            zoom:15,
+            scrollwheel: false,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+        var marker=new google.maps.Marker({
+            position:myCenter,
+            animation:google.maps.Animation.BOUNCE
+        });
+
+        marker.setMap(map);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-74929070-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>			

@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pantheon 2016</title>
+	<meta name="description" content="Pantheon: Civil fest" />
+	<meta name="keywords" content="Pantheon, civil, fest, css, 2016, 3d, perspective, navigation, menu" />
+
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- gallary stuff -->
+   <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/vicons-font.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/tilteffect.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/event.css" />
+    <link rel="stylesheet" type="text/css" href="css/kontext.css" />
+    <link rel="stylesheet" type="text/css" href="css/forkit.css" />
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/register.css">
+
+
+
+
+    <script src="js/snap.svg-min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="jquery.fullPage.js"></script>	
+<script type="text/javascript" src="js/sketch.min.js"></script>
+
+	
+
+
+</head>
+<body>
+<div id="preloader"></div>
+<header>
+  <div class="header-top clearfix">
+    <h1 class="l-left animated zoomIn"><a href="#firstSection" ><img id="logo" src="img/emblem.png"></img></a></h1>
+    <a class="l-left toggle-menu" href="#">   
+
+      <i></i>
+      <i></i>
+      <i></i>
+
+    </a> 
+    <span>Menu</span>
+  </div>
+
+  <nav class="hide">
+    <ul id="menu cl-effect-16">
+      <li data-menuanchor="firstSection">
+        <a href="#firstSection" title="First Section" data-hover="Home">Home</a>
+      </li>
+      <li data-menuanchor="secondSection">
+        <a href="#secondSection" title="Second Section" data-hover="About">About</a>
+      </li>
+      <li data-menuanchor="thirdSection">
+        <a href="#thirdSection" title="Second Section" data-hover="Gallery">Events</a>
+      </li>
+      <li data-menuanchor="fourthSection">
+        <a href="#fourthSection" title="Fourth Section" data-hover="Gallery">Gallery</a>
+      </li>
+      <li data-menuanchor="fifthSection">
+        <a href="#fifthSection" title="First Slide" data-hover="Gallery">Contact</a>
+      </li>
+      <li data-menuanchor="sixthSection">
+        <a href="#sixthSection" title="Second Slide" data-hover="Gallery">Sponsors</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="forkit-curtain">
+      <div class="close-button"></div>
+      <div class="banner">    
+    <div class="banr-info">
+      <div class="reg_logo">
+        Registration start on 8<sup>th</sup> march
+      </div>
+      <div class="bnr-text">
+          <div class="col-md-12 contact-form">
+          <form>
+            <div class="col-md-6 contact-grids">
+                <input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+              <input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+              <input type="text" value="Telephone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telephone';}" required="">
+            </div>
+            <div class="col-md-6 contact-grids">
+              <input type="text" value="College" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'College';}" required="">
+              <input type="text" value="College ID" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'College ID';}" required="">
+
+                   <select >
+                     <option selected disabled>Event</option>
+                    <option value="volvo">Best Engineer </option>
+                    <option value="saab">Survey hunt</option>
+                    <option value="opel">situation mangement</option>
+                    <option value="audi">Paper presentation</option>
+                     <option value="audi">Workshop</option>
+                  </select>
+
+
+              <!-- <input type="text" value="Event" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Event';}" required=""> -->           
+            </div>
+            
+            <input type="submit" value="Register" >
+          </form>
+            </div>
+        </div>
+      </div>
+    </div>  
+   
+    </div>
+
+    <!-- The ribbon -->
+    <a class="forkit" data-text="REGISTER" data-text-detached="Drag down >>" href="#"></a>
+</header>
+
+<div id="fullpage">
+  <section class="vertical-scrolling" id="glow" >
+   
+    <div id="name" ><img src="img/logo.png"></div>
+    <h3 id="count">A few more days for the extravaganza</h3>
+<div id="clockdiv">
+  <div><span class="days"></span><div class="smalltext">Days</div></div>
+  <div><span class="hours"></span><div class="smalltext">Hours</div></div>
+  <div><span class="minutes"></span><div class="smalltext">Minutes</div></div>
+  <div><span class="seconds"></span><div class="smalltext">Seconds</div></div>
+</div>
+    
+  
+  </section>
+  <section class="vertical-scrolling" >
+     <div id="container">
+        <p id="page_title">ABOUT</p> 
+        <div ><!-- <img src="img/tilt2.jpg" id="about_img"> --></div>
+
+     </div>
+ 
+
+     </section>
+  <section class="vertical-scrolling">
+     <div id="page_title_event">EVENTS AND WORKSHOPS</div> 
+    <article class="kontext" id="key">
+    
+      <div class="layer one show">
+        <h2>best engineer</h2>
+<!--         <p>A context-shift transition. Use the dots below or your keyboard arrows.</p>
+ -->
+      </div>
+      <div class="layer two">
+        <h2>Survey Hunt</h2>
+      </div>
+      <div class="layer three">
+        <h2>Paper Presentation</h2>
+      </div>
+      <div class="layer four">
+        <h2>Situation Management</h2>
+      </div>
+    </article>
+
+    <ul class="bullets events">
+      <li id="e1">Best Engineer</li>
+      <li id="e2">Survey Hunt</li>
+      <li id="e3">Paper Presentation</li>
+      <li id="e4">Situation Management</li>
+    </ul>
+    <ul class="bullets workshop">
+        <li id="w1">Workshop 1</li>
+      <li id="w2">Workshop 2</li>
+      </ul>
+
+
+   
+    <script>
+      // Create a new instance of kontext
+      var k = kontext( document.querySelector( '.kontext' ) );
+
+
+      // API METHODS:
+
+      // k.prev(); // Show prev layer
+      // k.next(); // Show next layer
+      // k.show( 3 ); // Show specific layer
+      // k.getIndex(); // Index of current layer
+      // k.getTotal(); // Total number of layers
+
+
+      // DEMO-SPECIFIC:
+
+      var bulletsContainer = document.body.querySelector( '.bullets' );
+
+      // Create one bullet per layer
+      /*for( var i = 0, len = k.getTotal(); i < len; i++ ) {
+        var bullet = document.createElement( 'li' );
+        bullet.className = i === 0 ? 'active' : '';
+        bullet.setAttribute( 'index', i );
+        bullet.onclick = function( event ) { k.show( event.target.getAttribute( 'index' ) ) };
+        bullet.ontouchstart = function( event ) { k.show( event.target.getAttribute( 'index' ) ) };
+        bulletsContainer.appendChild( bullet );
+      }*/
+
+               var bullet1 = document.getElementById( 'e1' );
+                bullet1.classList.add('active');  
+        bullet1.onclick =  function( event ) {k.show(0);   } ;
+      bullet1.ontouchstart = function( event ) { k.show(0 );    };
+         var bullet2 = document.getElementById( 'e2' );
+        bullet2.onclick = function( event ) { k.show( 1 );   };
+        bullet2.ontouchstart = function( event ) { k.show( 1 );   };
+
+          var bullet3 = document.getElementById( 'e3' );
+        bullet3.onclick =  function( event ) {k.show(2);   } ;
+      bullet3.ontouchstart = function( event ) { k.show(2 ); };
+         var bullet4 = document.getElementById( 'e4' );
+        bullet4.onclick = function( event ) { k.show( 3 );   };
+        bullet4.ontouchstart = function( event ) { k.show( 3 );   };
+
+
+
+      // Update the bullets when the layer changes
+      k.changed.add( function( layer, index ) {
+        var bullets = document.body.querySelectorAll( '.bullets li' );
+        for( var i = 0, len = bullets.length; i < len; i++ ) {
+          bullets[i].className = i === index ? 'active' : '';
+        }
+      } );
+
+      var list = document.addEventListener( 'keyup', function( event ) {
+        event.preventDefault();
+        if( event.keyCode === 37 ) k.prev();
+        if( event.keyCode === 39 ) k.next();
+      }, false );
+
+      var touchX = 0;
+      var touchConsumed = false;
+
+      document.addEventListener( 'touchstart', function( event ) {
+        touchConsumed = false;
+        lastX = event.touches[0].clientX;
+      }, false );
+
+      document.addEventListener( 'touchmove', function( event ) {
+        event.preventDefault();
+
+        if( !touchConsumed ) {
+          if( event.touches[0].clientX > lastX + 10 ) {
+            k.prev();
+            touchConsumed = true;
+          }
+          else if( event.touches[0].clientX < lastX - 10 ) {
+            k.next();
+            touchConsumed = true;
+          }
+        }
+      }, false );
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  </section>
+  <section class="vertical-scrolling demo-2" id="mrph">
+
+    
+    <div class="main">
+    <div id="page_title">GALLERY</div> 
+    <div id="morph-shape" class="morph-shape" data-morph-next="M301,301c0,0-83.8-21-151-21C71.8,280-1,301-1,301s21-65.7,21-151C20,79.936-1-1-1-1s73,11,151,11c85,0,151-11,151-11
+  s-21,66.43-21,151C280,229.646,301,301,301,301z">
+      <svg width="100%" height="100%" viewBox="0 0 300 300" preserveAspectRatio="none">
+        <path d="M301,301c0,0-83.8,0-151,0c-78.2,0-151,0-151,0s0-65.7,0-151C-1,79.936-1-1-1-1s73,0,151,0c85,0,151,0,151,0s0,66.43,0,151
+C301,229.646,301,301,301,301z" />
+      </svg>
+    </div>
+      <div class="container">
+       
+         
+          <!-- <p class="info"><strong>Drag the stack or click the button to navigate.</strong></p> -->
+
+        <div class="stack">
+          <ul id="elasticstack" class="stack__images">
+           <li><img src="gallery/gall1.jpg" alt="01"/></li>
+            <li><img src="gallery/gall2.jpg" alt="02"/></li>
+            <li><img src="gallery/gall3.jpg" alt="03"/></li>
+            <li><img src="gallery/gall4.jpg" alt="04"/></li>
+            <li><img src="gallery/gall5.jpg" alt="05"/></li>
+            <li><img src="gallery/gall6.jpg" alt="06"/></li>
+            <li><img src="gallery/gall7.jpg" alt="07"/></li>
+            <li><img src="gallery/gall8.jpg" alt="08"/></li>
+            <li><img src="gallery/gall9.jpg" alt="09"/></li>
+            <li><img src="gallery/gall10.jpg" alt="10"/></li>
+            <li><img src="gallery/gall11.jpg" alt="11"/></li>
+            <li><img src="gallery/gall12.jpg" alt="12"/></li>
+            <li><img src="gallery/gall13.jpg" alt="13"/></li>
+            <li><img src="gallery/gall14.jpg" alt="14"/></li>
+            <li><img src="gallery/gall15.jpg" alt="15"/></li>
+            <li><img src="gallery/gall16.jpg" alt="16"/></li>
+            <li><img src="gallery/gall17.jpg" alt="17"/></li>
+            <li><img src="gallery/gall18.jpg" alt="18"/></li>
+            <li><img src="gallery/gall19.jpg" alt="19"/></li>
+            <li><img src="gallery/gall20.jpg" alt="20"/></li>
+            <li><img src="gallery/gall21.jpg" alt="21"/></li>
+            <li><img src="gallery/gall22.jpg" alt="22"/></li>
+            <li><img src="gallery/gall23.jpg" alt="23"/></li>
+            <li><img src="gallery/gall24.jpg" alt="24"/></li>
+    
+
+          </ul>
+          <button id="stack-next" class="stack__next" text="Next">NEXT</button>
+          <ul id="stack-titles" class="stack__titles">
+            <li class="current"> 
+              <blockquote>
+                <p>The centre of attraction</p>
+                <footer>PANTHEON,ROME scaled model</footer>
+              </blockquote>
+            </li>
+            <li>
+              <blockquote>
+                <p>EXHIBITIONS</p>
+                <footer>Creativity from intelligent hearts</footer>
+              </blockquote>
+            </li>
+            <li>
+              <blockquote>
+                <p>EXHIBITIONS</p>
+                <footer>More than 30 models by students of CET</footer>
+              </blockquote>
+            </li>
+            <li>
+              <blockquote>
+                <p>OVERHELMING PARTICIPATION</p>
+                <footer>From best engineer prilims</footer>
+              </blockquote>
+            </li>
+            <li>
+              <blockquote>
+                <p>PARTICIPATION</p>
+                <footer>Above 200 registrations</footer>
+              </blockquote>
+            </li>
+            <li>
+              <blockquote>
+                <p>FOUR EVENTS</p>
+                <footer> Best Engineer | Tech Hunt | Model Making | Workshop </footer>
+              </blockquote>
+            </li>
+            <li>
+              <blockquote>
+                <p>WORKSHOP</p>
+                <footer>Mix design workshop conducted In association with Ultratech Cements </footer>
+              </blockquote>
+            </li>
+            <li>
+              <blockquote>
+                <p>MIX DESIGN</p>
+                <footer>Under active supervision of Executives from Ultratech</footer>
+              </blockquote>
+            </li>
+            <li>
+              <blockquote>
+                <p>INFORMALS</p>
+                <footer>MADE THE FEST MORE ENERGETIC</footer>
+              </blockquote>
+            </li>
+            <li>
+              <blockquote>
+                <p>INFORMALS</p>
+              </blockquote>
+            </li>
+            <li>
+              <blockquote>
+                <p>MODEL MAKING</p>
+                <footer>BEGINING OF STRUCTURAL MODELIING</footer>
+              </blockquote>
+            </li>
+             <li>
+              <blockquote>
+                <p>MODEL MAKING</p>
+                <footer>LOADING THE MODELS</footer>
+              </blockquote>
+            </li>
+             <li>
+              <blockquote>
+                <p>BEST ENGINEER</p>
+                <footer>BOND MAKING ROUND</footer>
+              </blockquote>
+            </li>
+              <li>
+              <blockquote>
+                <p>BEST ENGINEER</p>
+                <footer>BOND MAKING ROUND</footer>
+              </blockquote>
+            </li>
+              <li>
+              <blockquote>
+                <p>BEST ENGINEER</p>
+                <footer>QUIZ ROUND  BY HARIKRISHNAN,IRS </footer>
+              </blockquote>
+            </li>
+              <li>
+              <blockquote>
+                <p>BEST ENGINEER</p>
+                <footer>QUIZ ROUND</footer>
+              </blockquote>
+            </li>
+            <li>
+              <blockquote>
+                <p>CLOSING CEREMONY AND  CONCRETE DAY CELEBRATION</p>
+              </blockquote>
+            </li>
+            <li>
+              <blockquote>
+                <p>CLOSING CEREMONY AND  CONCRETE DAY CELEBRATION</p>
+              </blockquote>
+            </li>
+            <li>
+              <blockquote>
+                <p>CLOSING CEREMONY AND  CONCRETE DAY CELEBRATION</p>
+              </blockquote>
+            </li>
+            <li>
+              <blockquote>
+                <p>BEST ENGINEER</p>
+                <footer>INAUGURATED BY CERA CHEM MANAGING DIRECTOR</footer>
+              </blockquote>
+            </li>
+              <li>
+              <blockquote>
+                <p>CLOSING CEREMONY AND  CONCRETE DAY CELEBRATION</p>
+              </blockquote>
+            </li>
+              <li>
+              <blockquote>
+                <p>CLOSING CEREMONY AND  CONCRETE DAY CELEBRATION</p>
+              </blockquote>
+            </li>
+             <li>
+              <blockquote>
+                <p>PRIZE DISTRIBUTION</p>
+                <footer>BEST ENGINEER WINNER</footer>
+              </blockquote>
+            </li>
+              <li>
+              <blockquote>
+                <p>PRIZE DISTRIBUTION</p>
+                <footer>MODEL MAKING WINNERS</footer>
+              </blockquote>
+            </li>
+          </ul>
+        </div><!-- /stack -->
+      </div><!-- /container -->
+    </div><!-- /main -->
+    <script src="js/draggabilly.pkgd.min.js"></script>
+    <script src="js/elastiStack.js"></script>
+    <script>
+      (function() {
+        var body = document.getElementById('mrph'),
+          titles = [].slice.call( document.querySelectorAll( '#stack-titles > li' ) ),
+          totalTitles = titles.length,
+          stack = new ElastiStack( document.getElementById( 'elasticstack' ), {
+            onUpdateStack : function( idx ) {
+              classie.remove( titles[idx === 0 ? totalTitles - 1 : idx - 1], 'current' );
+              classie.add( titles[idx], 'current' );
+            }
+          } ),
+          shapeEl = document.getElementById( 'morph-shape' ),
+          s = Snap( shapeEl.querySelector( 'svg' ) ),
+          pathEl = s.select( 'path' ),
+          paths = { 
+            reset : pathEl.attr( 'd' ),
+            next  : shapeEl.getAttribute( 'data-morph-next' )
+          };
+
+        document.getElementById( 'stack-next' ).addEventListener( 'mousedown', nextItem );
+        
+        function nextItem() {
+          classie.add( body, 'animating' );
+          classie.add( body, 'navigate-next' );
+          pathEl.stop().animate( { 'path' : paths.next }, 450, mina.easeinout, function() {
+            classie.remove( body, 'navigate-next' );
+            stack.nextItem( { transform : 'rotate3d(0,0,1,3deg) translate3d(0,-40px,300px)' } );
+            pathEl.stop().animate( { 'path' : paths.reset }, 100, mina.easeout, function() {
+              classie.remove( body, 'animating' );
+            } );
+          } );
+        }
+      })();
+    </script>
+  </section>
+  <section class="vertical-scrolling">
+   <!--  <div class="horizontal-scrolling">
+      <h2>fullPage.js</h2>
+      <h3>This is the fifth section and it contains the first slide (actually section == first slide)</h3>
+    </div>
+    <div class="horizontal-scrolling">
+      <h2>fullPage.js</h2>
+      <h3>This is the second slide</h3> 
+      <p class="end">Thank you!</p>
+    </div> -->
+ <h3>Our team</h3> 
+    <div class="grid">
+          <figure class="effect-jazz" >
+            <img src="team/mini.jpg" alt="img1"/>
+            <figcaption>
+            <!--   <h2>MINI SOMAN</h2> -->
+              <p>MINI SOMAN</p>
+              <p>STAFF COORDINATOR</p>
+              <a href="#">View more</a>
+            </figcaption>     
+          </figure>
+          <figure class="effect-jazz" >
+            <img src="team/biju.jpg" alt="img2"/>
+            <figcaption>
+            <!--   <h2>MINI SOMAN</h2> -->
+              <p>BIJU V.</p>
+              <p>STAFF COORDINATOR</p>
+              <a href="#">View more</a>
+            </figcaption>     
+          </figure>
+           <figure class="effect-jazz" >
+            <img src="team/sabah.jpg" alt="img3"/>
+            <figcaption>
+            <!--   <h2>MINI SOMAN</h2> -->
+              <p>ALSABAH R.</p>
+              <p>CONVENOR</p>
+              <a href="#">View more</a>
+            </figcaption>     
+          </figure>
+           <figure class="effect-jazz" >
+            <img src="team/aminul.jpg" alt="img4"/>
+            <figcaption>
+            <!--   <h2>MINI SOMAN</h2> -->
+              <p>AMINUL HASSAN</p>
+              <p>CO-CCONVENOR</p>
+              <a href="#">View more</a>
+            </figcaption>     
+          </figure>
+          <figure class="effect-jazz" >
+            <img src="team/nidhin.jpg" alt="img5"/>
+            <figcaption>
+            <!--   <h2>MINI SOMAN</h2> -->
+              <p>NIDHIN P S</p>
+              <p>TECH HEAD</p>
+              <a href="#">View more</a>
+            </figcaption>     
+          </figure>
+          <figure class="effect-jazz" >
+            <img src="team/sreenath.jpg" alt="img6"/>
+            <figcaption>
+            <!--   <h2>MINI SOMAN</h2> -->
+              <p>SREENATH N</p>
+              <p>TECH HEAD</p>
+              <a href="#">View more</a>
+            </figcaption>     
+          </figure>
+
+        </div>
+ <div class="adv"><ul>
+ <H4>ADVISORY COMMITTEE</H4>
+ <li>Er. JOSE KURIAN</li>
+ <li>Er. RADHAKRISHNAN</li>
+ <li>Er. MADHU MOHAN</li>
+ <li>Er. ANWAR HUSSAIN</li>
+ <li>K.G.K MOORTHY</li>
+ <li>Dr.P.G. JAIRAJ</li>
+ <li>Dr. MINI SOMAN</li>
+ <li>Prof. BIJU V.</li>
+ <li>Dr. RUBY ABRAHAM</li>
+ 
+ </ul>
+
+ </div>
+  </section>
+<section class="vertical-scrolling tilt-grid grid--examples">
+   
+     <div id="page_title_sponsor">Previous Sponsors</div> 
+    <!-- <div class="content"> -->
+        
+        <!-- <ul class="grid grid--examples"> -->
+          <!-- <li class="grid__item">
+            <div class="grid__img grid__img--example-1" >
+              <img src="img/tilt2.jpg" class="tilt-effect" alt="grid01" data-tilt-options='{ "opacity" : 0.3, "extraImgs" : 3, "movement": { "perspective" : 1200, "translateX" : -5, "translateY" : -5, "rotateX" : -5, "rotateY" : -5 } }' />
+            </div>
+          </li> -->
+         <!--  <li class="grid__item ">
+           <div class="grid__img grid__img--example-2">
+             <img src="img/sfs.jpg" class="tilt-effect" alt="grid02"  data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' />
+           </div>
+         </li> -->
+         <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+              <img src="img/sfs.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+"opacity" : 0.5,
+"bgfixed" : true,
+"movement": { 
+  "perspective" : 500, 
+  "translateX" : -15, 
+  "translateY" : -15, 
+  "translateZ" : 20, 
+  "rotateX" : 15, 
+  "rotateY" : 15 
+}}' />
+
+
+            </div>
+          </li>
+
+          <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+              <img src="img/ultra.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+"opacity" : 0.5,
+"bgfixed" : true,
+"movement": { 
+  "perspective" : 500, 
+  "translateX" : -15, 
+  "translateY" : -15, 
+  "translateZ" : 20, 
+  "rotateX" : 15, 
+  "rotateY" : 15 
+}}' />
+
+
+
+            </div>
+          </li>
+
+          <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+              <img src="img/contconstr.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+"opacity" : 0.5,
+"bgfixed" : true,
+"movement": { 
+  "perspective" : 500, 
+  "translateX" : -15, 
+  "translateY" : -15, 
+  "translateZ" : 20, 
+  "rotateX" : 15, 
+  "rotateY" : 15 
+}}' />
+
+            </div>
+          </li>
+
+          <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+              <img src="img/cont.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+"opacity" : 0.5,
+"bgfixed" : true,
+"movement": { 
+  "perspective" : 500, 
+  "translateX" : -15, 
+  "translateY" : -15, 
+  "translateZ" : 20, 
+  "rotateX" : 15, 
+  "rotateY" : 15 
+}}' />
+
+            </div>
+          </li>
+
+          <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+              <img src="img/cres.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+"opacity" : 0.5,
+"bgfixed" : true,
+"movement": { 
+  "perspective" : 500, 
+  "translateX" : -15, 
+  "translateY" : -15, 
+  "translateZ" : 20, 
+  "rotateX" : 15, 
+  "rotateY" : 15 
+}}' />
+
+            </div>
+          </li>
+
+          <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+              <img src="img/gco.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+"opacity" : 0.5,
+"bgfixed" : true,
+"movement": { 
+  "perspective" : 500, 
+  "translateX" : -15, 
+  "translateY" : -15, 
+  "translateZ" : 20, 
+  "rotateX" : 15, 
+  "rotateY" : 15 
+}}' />
+
+            </div>
+          </li>
+          <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+              <img src="img/se.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+"opacity" : 0.5,
+"bgfixed" : true,
+"movement": { 
+  "perspective" : 500, 
+  "translateX" : -15, 
+  "translateY" : -15, 
+  "translateZ" : 20, 
+  "rotateX" : 15, 
+  "rotateY" : 15 
+}}' />
+
+            </div>
+          </li>
+
+
+          <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+              <img src="img/kinfra.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+"opacity" : 0.5,
+"bgfixed" : true,
+"movement": { 
+  "perspective" : 500, 
+  "translateX" : -15, 
+  "translateY" : -15, 
+  "translateZ" : 20, 
+  "rotateX" : 15, 
+  "rotateY" : 15 
+}}' />
+
+            </div>
+          </li>
+
+          <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+              <img src="img/ksbc.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+"opacity" : 0.5,
+"bgfixed" : true,
+"movement": { 
+  "perspective" : 500, 
+  "translateX" : -15, 
+  "translateY" : -15, 
+  "translateZ" : 20, 
+  "rotateX" : 15, 
+  "rotateY" : 15 
+}}' />
+          <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+              <img src="img/neptune.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+"opacity" : 0.5,
+"bgfixed" : true,
+"movement": { 
+  "perspective" : 500, 
+  "translateX" : -15, 
+  "translateY" : -15, 
+  "translateZ" : 20, 
+  "rotateX" : 15, 
+  "rotateY" : 15 
+}}' />
+
+            </div>
+          </li>
+
+          <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+              <img src="img/poabs.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+"opacity" : 0.5,
+"bgfixed" : true,
+"movement": { 
+  "perspective" : 500, 
+  "translateX" : -15, 
+  "translateY" : -15, 
+  "translateZ" : 20, 
+  "rotateX" : 15, 
+  "rotateY" : 15 
+}}' />
+
+            </div>
+          </li>
+
+          <li class="grid__item">
+            <div class="grid__img grid__img--example-3">
+              <img src="img/thali.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{"extraImgs" : 2,
+"opacity" : 0.5,
+"bgfixed" : true,
+"movement": { 
+  "perspective" : 500, 
+  "translateX" : -15, 
+  "translateY" : -15, 
+  "translateZ" : 20, 
+  "rotateX" : 15, 
+  "rotateY" : 15 
+}}' />
+
+            </div>
+          </li>
+
+
+            </div>
+          </li>
+
+
+
+          <!-- <li class="grid__item">
+            <div class="grid__img grid__img--example-4">
+              <img src="img/tilt.jpg" class="tilt-effect" alt="grid04"  data-tilt-options='{ "opacity" : 0.8, "bgfixed" : false, "extraImgs" : 3, "movement": { "perspective" : 1500, "translateX" : 80, "translateY" : 80, "translateZ" : 0, "rotateY" : 20 } }' />
+            </div>
+          </li> -->
+        <!-- </ul> -->
+
+     
+  </section>
+
+
+</div>
+
+
+ <script src="js/kontext.js"></script>
+<script type="text/javascript" src="js/glow.js"></script>
+<script src="js/tiltfx.js"></script>
+<script src="js/forkit.js"></script>
+
+<script>
+        
+        // ----------------------------------------
+        // Particle
+        // ----------------------------------------
+
+        function Particle( x, y, radius ) {
+            this.init( x, y, radius );
+        }
+
+        Particle.prototype = {
+
+            init: function( x, y, radius ) {
+
+                this.alive = true;
+
+                this.radius = radius || 10;
+                this.wander = 0.15;
+                this.theta = random( TWO_PI );
+                this.drag = 0.92;
+                this.color = '#fff';
+
+                this.x = x || 0.0;
+                this.y = y || 0.0;
+
+                this.vx = 0.0;
+                this.vy = 0.0;
+            },
+
+            move: function() {
+
+                this.x += this.vx;
+                this.y += this.vy;
+
+                this.vx *= this.drag;
+                this.vy *= this.drag;
+
+                this.theta += random( -0.5, 0.5 ) * this.wander;
+                this.vx += sin( this.theta ) * 0.1;
+                this.vy += cos( this.theta ) * 0.1;
+
+                this.radius *= 0.96;
+                this.alive = this.radius > 0.5;
+            },
+
+            draw: function( ctx ) {
+
+                ctx.beginPath();
+                ctx.arc( this.x, this.y, this.radius, 0, TWO_PI );
+                ctx.fillStyle = this.color;
+                ctx.fill();
+            }
+        };
+
+        // ----------------------------------------
+        // Example
+        // ----------------------------------------
+
+        var MAX_PARTICLES = 50;
+        var COLOURS = [ '#69D2E7', '#A7DBD8', '#E0E4CC', '#F38630', '#FA6900', '#FF4E50', '#F9D423' ];
+
+        var particles = [];
+        var pool = [];
+
+        var demo = Sketch.create({
+            container: document.getElementById( 'container' )
+        });
+
+        demo.setup = function() {
+
+            // Set off some initial particles.
+            var i, x, y;
+
+            for ( i = 0; i < 20; i++ ) {
+                x = ( demo.width * 0.5 ) + random( -100, 100 );
+                y = ( demo.height * 0.5 ) + random( -100, 100 );
+                demo.spawn( x, y );
+            }
+        };
+
+        demo.spawn = function( x, y ) {
+
+            if ( particles.length >= MAX_PARTICLES )
+                pool.push( particles.shift() );
+
+            particle = pool.length ? pool.pop() : new Particle();
+            particle.init( x, y, random( 5, 40 ) );
+
+            particle.wander = random( 0.5, 2.0 );
+            particle.color = random( COLOURS );
+            particle.drag = random( 0.9, 0.99 );
+
+            theta = random( TWO_PI );
+            force = random( 2, 8 );
+
+            particle.vx = sin( theta ) * force;
+            particle.vy = cos( theta ) * force;
+
+            particles.push( particle );
+        };
+
+        demo.update = function() {
+
+            var i, particle;
+
+            for ( i = particles.length - 1; i >= 0; i-- ) {
+
+                particle = particles[i];
+
+                if ( particle.alive ) particle.move();
+                else pool.push( particles.splice( i, 1 )[0] );
+            }
+        };
+
+        demo.draw = function() {
+
+            demo.globalCompositeOperation  = 'lighter';
+
+            for ( var i = particles.length - 1; i >= 0; i-- ) {
+                particles[i].draw( demo );
+            }
+        };
+
+        demo.mousemove = function() {
+
+            var particle, theta, force, touch, max, i, j, n;
+
+            for ( i = 0, n = demo.touches.length; i < n; i++ ) {
+
+                touch = demo.touches[i], max = random( 1, 4 );
+                for ( j = 0; j < max; j++ ) {
+                  demo.spawn( touch.x, touch.y );
+                }
+
+            }
+        };
+        
+        </script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
